@@ -6,15 +6,15 @@
   --bg-card: rgba(30, 41, 59, 0.7);
   --bg-card-hover: rgba(51, 65, 85, 0.8);
   --border-color: rgba(255, 255, 255, 0.08);
-  --border-glow: rgba(99, 102, 241, 0.4);
+  --border-glow: rgba(239, 68, 68, 0.4);
   --text-main: #f8fafc;
   --text-muted: #94a3b8;
-  --primary-accent: #6366f1;
-  --secondary-accent: #8b5cf6;
+  --primary-accent: #ef4444;
+  --secondary-accent: #b91c1c;
   --success-glow: #10b981;
   --warning-glow: #f59e0b;
   --danger-glow: #ef4444;
-  --gradient-main: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+  --gradient-main: linear-gradient(135deg, #ef4444 0%, #b91c1c 100%);
   --gradient-card: linear-gradient(145deg, rgba(30, 41, 59, 0.8), rgba(15, 23, 42, 0.9));
 }
 
@@ -26,8 +26,8 @@ html, body, [class*="css"] {
 
 /* App Main Background Override */
 .stApp {
-    background: radial-gradient(circle at 15% 15%, rgba(99, 102, 241, 0.15) 0%, transparent 40%),
-                radial-gradient(circle at 85% 85%, rgba(139, 92, 246, 0.12) 0%, transparent 40%),
+    background: radial-gradient(circle at 15% 15%, rgba(239, 68, 68, 0.15) 0%, transparent 40%),
+                radial-gradient(circle at 85% 85%, rgba(185, 28, 28, 0.12) 0%, transparent 40%),
                 #0f172a !important;
 }
 
@@ -53,7 +53,7 @@ html, body, [class*="css"] {
 .hero-container {
     text-align: center;
     padding: 3.5rem 1.5rem 2rem 1.5rem;
-    background: radial-gradient(circle at center, rgba(99, 102, 241, 0.2) 0%, transparent 70%),
+    background: radial-gradient(circle at center, rgba(239, 68, 68, 0.2) 0%, transparent 70%),
                 var(--gradient-card);
     border: 1px solid var(--border-glow);
     border-radius: 24px;
@@ -68,9 +68,9 @@ html, body, [class*="css"] {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    background: rgba(99, 102, 241, 0.15);
-    border: 1px solid rgba(99, 102, 241, 0.4);
-    color: #a5b4fc;
+    background: rgba(239, 68, 68, 0.15);
+    border: 1px solid rgba(239, 68, 68, 0.4);
+    color: #fca5a5;
     padding: 0.4rem 1.1rem;
     border-radius: 50px;
     font-size: 0.85rem;
@@ -84,7 +84,7 @@ html, body, [class*="css"] {
     font-family: 'Outfit', sans-serif;
     font-size: 3.25rem;
     font-weight: 800;
-    background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 50%, #818cf8 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 50%, #f87171 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 0.75rem;
@@ -134,8 +134,8 @@ html, body, [class*="css"] {
 
 .feature-card:hover {
     transform: translateY(-6px);
-    border-color: rgba(129, 140, 248, 0.4);
-    box-shadow: 0 20px 35px -10px rgba(99, 102, 241, 0.25);
+    border-color: rgba(248, 113, 113, 0.4);
+    box-shadow: 0 20px 35px -10px rgba(239, 68, 68, 0.25);
 }
 
 .feature-card:hover::before {
@@ -146,13 +146,13 @@ html, body, [class*="css"] {
     width: 52px;
     height: 52px;
     border-radius: 14px;
-    background: rgba(99, 102, 241, 0.15);
+    background: rgba(239, 68, 68, 0.15);
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.75rem;
     margin-bottom: 1.25rem;
-    border: 1px solid rgba(99, 102, 241, 0.25);
+    border: 1px solid rgba(239, 68, 68, 0.25);
 }
 
 .feature-title {
@@ -190,7 +190,7 @@ html, body, [class*="css"] {
 
 .step-card:hover {
     background: rgba(30, 41, 59, 0.8);
-    border-color: rgba(99, 102, 241, 0.3);
+    border-color: rgba(239, 68, 68, 0.3);
 }
 
 .step-number {
@@ -205,7 +205,7 @@ html, body, [class*="css"] {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
+    box-shadow: 0 4px 12px rgba(239, 68, 68, 0.4);
 }
 
 .step-text h4 {
@@ -241,7 +241,7 @@ html, body, [class*="css"] {
     backdrop-filter: blur(10px);
 }
 
-.metric-card.ats-score { border-left: 4px solid #6366f1; }
+.metric-card.ats-score { border-left: 4px solid #ef4444; }
 .metric-card.skills-count { border-left: 4px solid #10b981; }
 .metric-card.match-rate { border-left: 4px solid #f59e0b; }
 
@@ -283,13 +283,13 @@ html, body, [class*="css"] {
 }
 
 .skill-tag {
-    background: rgba(99, 102, 241, 0.15);
-    color: #a5b4fc;
+    background: rgba(239, 68, 68, 0.15);
+    color: #fca5a5;
     padding: 0.45rem 0.95rem;
     border-radius: 50px;
     font-size: 0.88rem;
     font-weight: 600;
-    border: 1px solid rgba(99, 102, 241, 0.3);
+    border: 1px solid rgba(239, 68, 68, 0.3);
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
     transition: all 0.25s ease;
 }
@@ -299,17 +299,17 @@ html, body, [class*="css"] {
     color: #ffffff;
     border-color: var(--primary-accent);
     transform: translateY(-2px);
-    box-shadow: 0 6px 15px rgba(99, 102, 241, 0.4);
+    box-shadow: 0 6px 15px rgba(239, 68, 68, 0.4);
 }
 
 .missing-tag {
-    background: rgba(239, 68, 68, 0.15);
-    color: #fca5a5;
+    background: rgba(225, 29, 72, 0.15);
+    color: #fda4af;
     padding: 0.45rem 0.95rem;
     border-radius: 50px;
     font-size: 0.88rem;
     font-weight: 600;
-    border: 1px solid rgba(239, 68, 68, 0.3);
+    border: 1px solid rgba(225, 29, 72, 0.3);
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
@@ -360,13 +360,13 @@ html, body, [class*="css"] {
     font-weight: 700 !important;
     font-size: 0.95rem !important;
     letter-spacing: 0.02em !important;
-    box-shadow: 0 4px 14px rgba(99, 102, 241, 0.35) !important;
+    box-shadow: 0 4px 14px rgba(239, 68, 68, 0.35) !important;
     transition: all 0.3s ease !important;
 }
 
 .stButton > button:hover {
     transform: translateY(-2px) !important;
-    box-shadow: 0 8px 25px rgba(99, 102, 241, 0.5) !important;
+    box-shadow: 0 8px 25px rgba(239, 68, 68, 0.5) !important;
     opacity: 0.95 !important;
 }
 
@@ -398,7 +398,7 @@ html, body, [class*="css"] {
 /* File Uploader styling */
 [data-testid="stFileUploader"] {
     background: rgba(30, 41, 59, 0.4);
-    border: 2px dashed rgba(99, 102, 241, 0.3);
+    border: 2px dashed rgba(239, 68, 68, 0.3);
     border-radius: 16px;
     padding: 1rem;
     transition: border-color 0.3s ease;

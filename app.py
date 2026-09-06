@@ -50,7 +50,7 @@ st.sidebar.markdown("""
     <div style='text-align: center; padding: 1rem 0 1.5rem 0;'>
         <div style='font-size: 2.5rem; margin-bottom: 0.25rem;'>💼</div>
         <h2 style='color: #F8FAFC; margin: 0; font-size: 1.5rem; font-weight: 800;'>ResumeAI</h2>
-        <span style='background: rgba(99, 102, 241, 0.2); color: #a5b4fc; font-size: 0.75rem; font-weight: 700; padding: 0.2rem 0.6rem; border-radius: 12px; border: 1px solid rgba(99, 102, 241, 0.4);'>PRO v2.0</span>
+        <span style='background: rgba(239, 68, 68, 0.2); color: #fca5a5; font-size: 0.75rem; font-weight: 700; padding: 0.2rem 0.6rem; border-radius: 12px; border: 1px solid rgba(239, 68, 68, 0.4);'>PRO v2.0</span>
     </div>
 """, unsafe_allow_html=True)
 
@@ -123,7 +123,7 @@ if menu == "🏠 Home":
                 <div class="step-number">3</div>
                 <div class="step-text">
                     <h4>Export PDF Report</h4>
-                    <p>Review interactive charts and download a executive PDF evaluation report.</p>
+                    <p>Review interactive charts and download an executive PDF evaluation report.</p>
                 </div>
             </div>
         </div>
@@ -210,8 +210,8 @@ elif menu == "📊 Analyze Resume":
         
         st.markdown(f"""
             <div style='display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.5rem;'>
-                <h3 style='color: #f8fafc; font-weight: 700; margin: 0;'>Evaluation Results: <span style='color: #818cf8;'>{analysis['filename']}</span></h3>
-                <span style='background: rgba(99, 102, 241, 0.2); color: #a5b4fc; padding: 0.35rem 0.85rem; border-radius: 20px; border: 1px solid rgba(99, 102, 241, 0.4); font-size: 0.85rem; font-weight: 600;'>Role: {analysis['job_role']}</span>
+                <h3 style='color: #f8fafc; font-weight: 700; margin: 0;'>Evaluation Results: <span style='color: #f87171;'>{analysis['filename']}</span></h3>
+                <span style='background: rgba(239, 68, 68, 0.2); color: #fca5a5; padding: 0.35rem 0.85rem; border-radius: 20px; border: 1px solid rgba(239, 68, 68, 0.4); font-size: 0.85rem; font-weight: 600;'>Role: {analysis['job_role']}</span>
             </div>
         """, unsafe_allow_html=True)
         
@@ -273,7 +273,7 @@ elif menu == "📊 Analyze Resume":
                 range_x=[0, 55],
                 text="Score",
                 color="Score",
-                color_continuous_scale=["#6366f1", "#8b5cf6", "#10b981"]
+                color_continuous_scale=["#ef4444", "#dc2626", "#10b981"]
             )
             fig_breakdown.update_layout(
                 paper_bgcolor='rgba(0,0,0,0)',
@@ -296,7 +296,7 @@ elif menu == "📊 Analyze Resume":
                 title = {'text': "<b>Overall ATS Compatibility</b>", 'font': {'size': 18, 'color': '#f8fafc'}},
                 gauge = {
                     'axis': {'range': [None, 100], 'tickwidth': 1, 'tickcolor': "#94a3b8"},
-                    'bar': {'color': "#6366f1"},
+                    'bar': {'color': "#ef4444"},
                     'bgcolor': "rgba(30, 41, 59, 0.6)",
                     'borderwidth': 1,
                     'bordercolor': "rgba(255, 255, 255, 0.1)",
