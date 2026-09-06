@@ -1,0 +1,7 @@
+.env
+.vercel/
+__pycache__/
+*.pyc
+database/resume_history.db
+reports/*.pdf
+.pytest_cache/
