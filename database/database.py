@@ -4,7 +4,9 @@ import os
 from datetime import datetime
 
 class ResumeDatabase:
-    def __init__(self, db_path="C:\\Users\\Nishant Puthran\\.gemini\\antigravity\\scratch\\ResumeAI-Analyzer\\database\\resume_history.db"):
+    def __init__(self, db_path=None):
+        if db_path is None:
+            db_path = os.path.join(os.path.dirname(__file__), "resume_history.db")
         self.db_path = db_path
         # Ensure database directory exists
         os.makedirs(os.path.dirname(self.db_path), exist_ok=True)
